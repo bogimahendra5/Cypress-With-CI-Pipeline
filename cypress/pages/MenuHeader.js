@@ -1,5 +1,3 @@
-import { stubFalse } from "cypress/types/lodash";
-
 class MenuHeader {
   // Non Login Header
   btnSignin = () => {
