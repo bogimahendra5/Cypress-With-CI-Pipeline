@@ -1,7 +1,10 @@
 import HomePage from "../pages/HomePages";
+
 describe("Go to Website", () => {
-  it("Visit URL", () => {
+  beforeEach(() => {
     cy.visit("/");
+  });
+  it("Visit URL", () => {
     HomePage.btnShopNewYoga().should("be.visible");
     HomePage.btnMorePants()
       .should("be.visible")

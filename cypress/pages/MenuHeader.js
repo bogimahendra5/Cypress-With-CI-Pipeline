@@ -1,32 +1,27 @@
 class MenuHeader {
   // Non Login Header
-  btnSignin = () => {
-    cy.xpath("//div[@class='panel header']//a[contains(text(),'Sign In')]");
-  };
-  btnCreateAccount = () => {
+  btnSignin = () => cy.xpath("(//a[contains(text(),'Sign In')])[1]");
+  btnCreateAccount = () =>
     cy.xpath(
       "//div[@class='panel header']//a[normalize-space()='Create an Account']"
     );
-  };
 
   // Logged Header
-  nameLogged = () => {
+  nameLogged = () =>
     cy.get("div[class='panel header'] span[class='logged-in']");
-  };
-  profilDropdownMenu = () => {
+
+  profilDropdownMenu = () =>
     cy.xpath("//span[@class='customer-name active']//button[@type='button']");
-  };
-  menuMyAccount = () => {
+
+  menuMyAccount = () =>
     cy.xpath("//span[@class='customer-name active']//button[@type='button']");
-  };
-  menuWishList = () => {
+
+  menuWishList = () =>
     cy.xpath(
       "//div[@aria-hidden='false']//a[normalize-space()='My Wish List']"
     );
-  };
-  Logout = () => {
+  Logout = () =>
     cy.xpath("//div[@aria-hidden='false']//a[normalize-space()='Sign Out']");
-  };
 
   // Menu
   btnWhatsnew = () => cy.get("#ui-id-3");
