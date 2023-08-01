@@ -1,5 +1,5 @@
 class LoginPages {
-  //Form Signin
+  // Form Signin
   inputEmail = () => cy.get("#email");
   inputPassword = () => cy.get("#pass");
   btnSubmit = () => cy.get("#send2");
@@ -13,7 +13,7 @@ class LoginPages {
   passRequired = () => cy.get("#pass-error");
   emailRequired = () => cy.get("#email-error");
 
-  //Signin Flow
+  // Signin Flow
   Login = (email, pass) => {
     this.inputEmail().type(email);
     this.inputPassword().type(pass);
