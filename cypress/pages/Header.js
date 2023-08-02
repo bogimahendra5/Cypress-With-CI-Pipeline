@@ -1,6 +1,7 @@
-class MenuHeader {
+class Header {
   // Non Login Header
   btnSignin = () => cy.xpath("(//a[contains(text(),'Sign In')])[1]");
+
   btnCreateAccount = () =>
     cy.xpath(
       "//div[@class='panel header']//a[normalize-space()='Create an Account']"
@@ -13,23 +14,15 @@ class MenuHeader {
   profilDropdownMenu = () =>
     cy.xpath("//span[@class='customer-name active']//button[@type='button']");
 
-  menuMyAccount = () =>
+  btnMyAccount = () =>
     cy.xpath("//span[@class='customer-name active']//button[@type='button']");
 
-  menuWishList = () =>
+  btnWishList = () =>
     cy.xpath(
       "//div[@aria-hidden='false']//a[normalize-space()='My Wish List']"
     );
-  Logout = () =>
+  btnLogout = () =>
     cy.xpath("//div[@aria-hidden='false']//a[normalize-space()='Sign Out']");
-
-  // Menu
-  btnWhatsnew = () => cy.get("#ui-id-3");
-  btnWomen = () => cy.get("#ui-id-4");
-  btnMen = () => cy.get("#ui-id-5");
-  btnGear = () => cy.get("#ui-id-6");
-  btnTraining = () => cy.get("#ui-id-7");
-  btnSale = () => cy.get("#ui-id-8");
 
   // Object
   StoreLogo = () => cy.get("//a[@aria-label='store logo']//img");
@@ -38,4 +31,4 @@ class MenuHeader {
   Search = () => cy.get("#search");
 }
 
-export default new MenuHeader();
+export default new Header();
