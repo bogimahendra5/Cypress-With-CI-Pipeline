@@ -1,6 +1,6 @@
 # Cypress-CI-CD-Pipeline
 
-Mini project end to end automation testing on web "/https://magento.softwaretestingboard.com/", with implementation Continous Integration on Github Action.
+Mini project end to end automation testing on web https://magento.softwaretestingboard.com, with implementation Continous Integration on Github Action.
 
 ## Setup and Installation
 
