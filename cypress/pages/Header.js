@@ -11,8 +11,7 @@ class Header {
   nameLogged = () =>
     cy.get("div[class='panel header'] span[class='logged-in']");
 
-  profilDropdownMenu = () =>
-    cy.xpath("//span[@class='customer-name active']//button[@type='button']");
+  profilDropdownMenu = () => cy.xpath("(//button[@type='button'])[1]");
 
   btnMyAccount = () =>
     cy.xpath("//span[@class='customer-name active']//button[@type='button']");

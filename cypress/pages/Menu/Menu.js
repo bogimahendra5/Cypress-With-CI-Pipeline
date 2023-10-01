@@ -1,5 +1,4 @@
 class Menu {
-  //
   // Main Menu
   btnWhatsnew = () => cy.get("#ui-id-3");
   btnWomen = () => cy.get("#ui-id-4");
@@ -8,7 +7,6 @@ class Menu {
   btnTraining = () => cy.get("#ui-id-7");
   btnSale = () => cy.get("#ui-id-8");
 
-  //
   // Men Menu
   menTops = () => cy.get("#ui-id-17");
   menBottom = () => cy.get("#ui-id-18");
@@ -23,8 +21,11 @@ class Menu {
   menBottomsPants = () => cy.get("#ui-id-23");
   menBottomsShorts = () => cy.get("#ui-id-24");
 
-  //
-  // Women Menu
+  gotoJacketMenu = () => {
+    this.btnMen().trigger("mouseover");
+    this.menTops().trigger("mouseover");
+    this.menTopsJacket().click();
+  };
 }
 
 export default new Menu();
