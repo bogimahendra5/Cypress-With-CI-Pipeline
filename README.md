@@ -25,8 +25,6 @@ Mini project end to end automation testing on web https://magento.softwaretestin
   npm install -D cypress-xpath
 ```
 
-
-    
 ## Running Tests
 Cypress automatically finds your tests located in the cypress/e2e directory and running headless on electron browser (default cypress). To run the tests, use the following command:
 
