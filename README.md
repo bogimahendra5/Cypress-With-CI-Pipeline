@@ -29,6 +29,10 @@ Mini project end to end automation testing on web https://magento.softwaretestin
 Cypress automatically finds your tests located in the cypress/e2e directory and running headless on electron browser (default cypress). To run the tests, use the following command:
 
 ```bash
+- Running code using default web (electron)
   npx cypress run
+
+- Running code using web (chrome)
+  npx cypress run --browser chrome
 ```
 
